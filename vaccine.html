@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/vaccine.css" class="css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+         
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        border-radius:25px;  
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     .white
+     { display: inline-block;
+    
+       text-decoration: none;
+       color: white;
+     }
+     .white :hover{
+       color: white;
+     }
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+    </style>
+  </head>
+  <body>
+    <center> <h1> Vaccination </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label> Name of District: </label>   
+            <input type="text" placeholder="Enter place" name="District" required>  
+            <label> Name of town: </label>   
+            <input type="text" placeholder="Enter place" name="town" required>  
+            <label> Name of state: </label>   
+            <input type="text" placeholder="Enter place" name="District" required>  
+            <label>Dates available for Vaccination : </label> 
+            <input type="date" placeholder="Enter date" name="Date" required>  
+           
+           <br>
+            <label> choose your vaccine</label> 
+            <table>
+              <tr>
+                <td><input type="radio">covaccine</td>
+                <td><input type="radio">covishield</td>
+                <td><input type="radio">sputnik</td>
+                
+            </tr>
+            </table>    
+            
+            <button type="submit">
+              <a  class ="white"  href="vaccinetable.html">NEXT</a> </button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            
+        </div>   
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

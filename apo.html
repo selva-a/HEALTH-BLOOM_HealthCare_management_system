@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8ce335f9b0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="css/animate.css" class="css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="css/parallax.js"></script>
+  <script src="https://kit.fontawesome.com/8ce335f9b0.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .move {
+      margin-top: 71px;
+    }
+
+    .cp {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .cp img {
+      margin-bottom: 10px;
+    }
+
+    .cp h1 {
+      margin-bottom: 15px;
+    }
+
+    .cp p {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .parallax {
+      height: 500px;
+
+
+
+    }
+
+    .parallax-window {
+      min-height: 400px;
+      background: transparent;
+      text-align: center;
+      padding: 200px;
+      color: white;
+      padding: 160px;
+
+    }
+
+    .content {
+      text-align: center;
+      margin: 25px;
+      padding: 50px;
+
+    }
+
+    .content h1 {
+      margin-top: 50px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      background: lightslategray;
+      padding: 20px 50px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    .right {
+      float: right;
+      color: white;
+    }
+
+    @media(max-width:768px) {
+      .parallax-window {
+        padding: 60px;
+      }
+
+      .parallax-window h1 {
+        font-size: 20px;
+        margin-top: 25%;
+
+      }
+    }
+
+    .red {
+      color: rgb(24, 94, 10);
+      font-family: 'sans-serif', cursive;
+    }
+
+    .button {
+      border-radius: 50px;
+    }
+
+    .font {
+
+      font-family: 'Dela Gothic One', cursive;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .cont {
+      padding-top: 15vh;
+    }
+
+    .wrapper {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      background: #fff;
+      padding: 60px 45px;
+      position: relative;
+      left: 40%;
+      box-sizing: border-box;
+      outline: none;
+      text-decoration: none;
+      /* transform: translate(-50%,-50%);*/
+      border-radius: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .wrapper .title {
+      position: relative;
+      left: -0.5vw;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #3aaf9f;
+    }
+
+    .wrapper .social_media {
+      position: relative;
+      left: 0vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .wrapper .social_media .item {
+      position: relative;
+      left: -2vw;
+      margin: 0 5px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border: 2px solid #eeeeee;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #eeeeee;
+      transition: all 0.5s ease;
+    }
+
+    .wrapper .social_media .item:hover {
+      border: 2px solid #3aaf9f;
+      color: #3aaf9f;
+    }
+
+    .wrapper .form .input_field {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .wrapper .form .input_field .input {
+      width: 100%;
+      padding: 12px;
+      padding-left: 30px;
+      border: none;
+      background: #eeeeee;
+    }
+
+    .wrapper .form .btn {
+      position: relative;
+      left: 2vw;
+      width: 70%;
+      margin: 20px auto 0;
+      background: #3aaf9f;
+      text-align: center;
+      padding: 12px;
+      border-radius: 25px;
+    }
+
+    .wrapper .form .btn a {
+      color: #fff;
+    }
+
+    .wrapper .form .input_field i {
+      position: absolute;
+      top: 16px;
+      left: 10px;
+      font-size: 14px;
+      color: #1d2120;
+    }
+
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #1d2120;
+    }
+
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #1d2120;
+    }
+
+    :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #1d2120;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+      <a class="navbar-brand" href="#">
+        <h2 class="font">HEALTH BLOOM </h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"> Home</i> <span class="sr-only">(current)</span></a>
+          </li>
+          <!--- <li class="nav-item ">
+                        <a class="nav-link" href="diet.html"><i class="fas fa-stethoscope"> Diet </i> </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="psychocare.html"><i class="fas fa-virus"> Psycho Care</i> </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.cowin.gov.in"><i class="fas fa-syringe"> Vaccination</i>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.healthline.com/health-news"><i class="far fa-newspaper">
+                                News </i> </a>
+                    </li>-->
+
+        </ul>
+
+
+        <span class="navbar-text">
+          <ul class="navbar-nav navbar-right">
+
+            <li class="nav-item ">
+              <a class="nav-link" href="signin-up.html"><i class="fas fa-sign-up"> Sign up/sign in </i> </a>
+            </li>
+          <!--- <li class="nav-item ">
+              <a class="nav-link" href=""><i class="fas fa-log-in"> sign in</i> </a>
+            </li>-->
+          </ul>
+
+        </span>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="cont">
+
+      <!---<div class="container cp">
+                <div class="row">
+                  <div class="col-lg-4">
+            
+            
+                    <img src="images/meditation.jpg" alt="#" width="140" height="140"
+                      class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+                    <h1> MEDITATION</h1>
+            
+                  </div>
+                  <div class="col-lg-4">
+            
+                    <img src="images/fitness.jpg" alt="#" width="140" height="140"
+                      class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+                    <h1>FITNESS</h1>
+            
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/ayurvedic.webp" alt="#" width="140" height="140"
+                      class="rounded-circle animate__animated animate__bounce animate__delay-2s ">
+                    <h1>AYURVEDIC CARE</h1>
+            
+                  </div>
+            
+                </div>
+              </div>-->
+
+
+
+      <div class="parallax-window" data-parallax="scroll" data-image-src="images/consult6.jpeg">
+        <h1>
+          <p class="red"><b>Consult a Doctor </b></p>
+        </h1>
+        <a href="#booknow" class="btn btn-primary button">
+          <font style="font-family:sans-serif;">Book Now</font>
+        </a>
+
+      </div>
+      <!--parallex ends-->
+      <div class="container content">
+
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>
+              <p>CARDIOLOGIST</p>
+            </h1>
+            <p>Why worries when the world best cardiologist are here to monitor your heart????</p>
+          </div>
+          <div class="col-lg-5">
+            <img src="images/cardiology.jpg" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+
+          </div>
+        </div>
+      </div>
+      <!--comment 1 ends-->
+      <hr>
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="images/psychotherapist.jfif" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s"/>
+          </div>
+          <div class="col-lg-7">
+            <h1>
+              <p>PSYCHOTHERAPIST</p>
+            </h1>
+            <p>Why worries when psychotherapist are here to care your fitness????</p>
+
+
+          </div>
+        </div>
+      </div>
+      <!--comment 2 ends-->
+      <div class="container content">
+
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>
+              <p>NUTRITIONIST</p>
+            </h1>
+            <p>Why fear when doctor is here to care your diet???? </p>
+          </div>
+          <div class="col-lg-5">
+            <img src="images/nutritionist.jpg" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+
+          </div>
+        </div>
+      </div>
+      <!--comment 3 ends-->
+      <hr>
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="images/PHYSCHOLOGIST.jpeg" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+          </div>
+          <div class="col-lg-7">
+            <h1>
+              <p>PSYCHOLOGIST</p>
+            </h1>
+            <p>Why worries when psychologist are here to care your mental stress and your mind????</p>
+
+
+          </div>
+        </div>
+      </div>
+      <!--comment 4 ends-->
+      <div class="container content">
+
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>
+              <p>AYURVEDIC</p>
+            </h1>
+            <p>Why fear when the worlds best ayurvedics is here to care your health by ayurvedic herbs???? </p>
+          </div>
+          <div class="col-lg-5">
+            <img src="images/ayurvedicc.jpeg" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+
+          </div>
+        </div>
+      </div>
+      <!--comment 5 ends-->
+      <hr>
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="images/neurologist.jpeg" alt="" height="200px" width="200px"
+              class="rounded-circle animate__animated animate__bounce animate__delay-2s">
+          </div>
+          <div class="col-lg-7">
+            <h1>
+              <p>NEUROLOGIST</p>
+            </h1>
+            <p>Why worries when worlds best neurologist are here to care your neurology (brain)????</p>
+
+
+          </div>
+        </div>
+      </div>
+      <!--comment 6 ends-->
+     <div id="booknow">
+      <div class="wrapper">
+        <div class="title">
+          Register Here for consultation
+        </div>
+        <div class="social_media">
+          <div class="item">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="item">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="item">
+            <i class="fab fa-google-plus-g"></i>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="input_field">
+            <input type="text" placeholder="Name" class="input">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Email" class="input">
+            <i class="far fa-envelope"></i>
+          </div>
+
+            <select name="doctor" id="doctor">
+              <option value="NORMAL MBBS DOCTOR" >---Choose Doctor---</option>
+              <option value="CARDIOLOGIST">CARDIOLOGIST</option>
+              <option value="NEUROLOGIST">NEUROLOGIST</option>
+              <option value="AYURVEDIC">AYURVEDIC</option>
+              <option value="NUTRITIONIST">NUTRITIONIST</option>
+              <option value="PHYSCHOLOGIST">PHYSCHOLOGIST</option>
+              <option value="PSYCHOTHERAPIST">PSYCHOTHERAPIST</option>
+            </select> 
+            <div class="input_field">
+              <input type="text" placeholder="name of your doctor" class="input">
+              <i class="fas fa-stethoscope"></i>
+          </div>
+            <div class="input_field">
+              <input type="password" placeholder="Password" class="input">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="btn">
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+  </main>
+  <hr>
+  <footer>
+
+    <!--<p class="right"><i class="fab fa-facebook"><a href="https://www.facebook.com/profile.php?id=100024767953980"></a></i><i class="fab fa-instagram"><a href="https://www.instagram.com/d_a_z_z_l_e_d._.sweetie/"></a></i></p>-->
+    <p><i class="fa fa-copyright" aria-hidden="true">HEALTH BLOOM </i></i></p>
+  </footer>
+</body>
+
+</html>
