@@ -1,0 +1,80 @@
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+body h2{
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+.move
+{
+    margin-top: 71px;
+}
+.cp
+{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cp img{
+    margin-bottom: 10px;
+}
+.cp h1{
+    margin-bottom: 15px;
+}
+.cp p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.parallax
+{
+    height: 500px;
+    
+    
+
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    text-align: center;
+    padding: 200px;
+    color: white;
+    padding: 160px;
+    
+}
+.content
+{
+    text-align: center;
+    margin: 25px;
+    padding: 50px;
+    
+}
+.content h1{
+    margin-top: 50px;
+}
+footer
+{
+    height: 70px;
+    background:lightslategray;
+    padding: 20px 50px;
+}
+footer a{
+    color: white;
+}
+.right
+{
+    float: right;
+    color: white;
+}
+@media(max-width:768px)
+{
+    .parallax-window{
+        padding: 60px;
+    }
+    .parallax-window h1{
+        font-size: 20px;
+        margin-top: 25%;
+        
+    }
+}
